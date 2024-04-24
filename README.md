@@ -561,3 +561,14 @@ Notons que Git a bien effectue un Fast forward car aucun conflit n'a ete detecte
 De maniere plus generale, `git pull` combine un `git fetch` suivi d'un `git merge` exactement comme Bob vient de le faire manuellement.
 
 Git `pull` est une maniere plus simple de mettre a jour sa copie locale avec les changements venant d'`origin`.
+
+## Resume d'un cycle de travail avec git
+
+  - 1. Commencez toujours par un `git pull`
+  - 2. Ajoutez, modifiez, supprimez des fichiers et faites save
+  - 3. Ajoutez les fichiers a la base de donnee Git avec `git add`
+  - 4. Validez les fichiers ajoutes avec `git commit -m "Mon commit"
+  - 5. Repetez les etapes 1-4 tant que vous avez du travail
+  - 6. Avant de pousser vod modifications, assurez vous d'etre a jour avec l'`origin`
+  - 7. Resolvez les conflicts si il y'en a !
+  - 8. Poussez votre/vos commits sur le repo `origin` avec `git push`
