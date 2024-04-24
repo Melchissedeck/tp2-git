@@ -15,6 +15,7 @@ respectPrefersColorScheme	    boolean	false	              Si vous voulez utilise
 
 
 Exemple de configuration :
+```
 
 export default {
   themeConfig: {
@@ -25,3 +26,5 @@ export default {
     },
   },
 };
+
+```
